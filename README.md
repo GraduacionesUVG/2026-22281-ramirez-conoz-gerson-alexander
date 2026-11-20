@@ -105,7 +105,7 @@ El código proviene de cinco repositorios privados de la organización CONGENIAG
 
    ```bash
    cd src/CONGENIA-ORCH
-   docker compose up -d --build
+   docker compose up -d --build         # equivalente: npm start
    ```
 
    La interfaz queda disponible en `http://localhost:<PUERTO_FRONTEND>`.

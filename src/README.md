@@ -12,8 +12,8 @@ Compose. El despliegue en AWS vive en `CONGENIA-INFRA`, y desde que cada
 servicio publica su imagen por GitHub Actions, aquí no se construye nada para
 producción.
 
-- Levantar AWS desde cero: `CONGENIA-INFRA/BOOTSTRAP.md`
-- Ciclo de despliegue: `CONGENIA-INFRA/HERE.md`
+- Levantar AWS desde cero y ciclo de despliegue: [CONGENIA-INFRA/docs/DEPLOY.md](CONGENIA-INFRA/docs/DEPLOY.md)
+- Arquitectura en AWS: [CONGENIA-INFRA/docs/ARQUITECTURA.md](CONGENIA-INFRA/docs/ARQUITECTURA.md)
 
 ## Índice
 
