@@ -68,6 +68,7 @@ CONGENIA es una plataforma integrada al SADC para registrar, gestionar y analiza
 ├── src/                       Orquestación local (repositorio CONGENIA-ORCH)
 │   ├── docker-compose.yml     Stack completo para desarrollo local
 │   ├── .env.example           Variables de entorno con valores de desarrollo
+│   ├── package.json           Atajos npm para el stack (start, stop, logs, health)
 │   ├── keycloak/              Imagen de Keycloak con el realm congenia
 │   ├── scripts/               Verificación de salud y publicación de imágenes
 │   ├── CONGENIA-M1/           Interfaz: ficha y panel de consulta
@@ -91,7 +92,7 @@ El código proviene de cinco repositorios privados de la organización CONGENIAG
 2. **Instalar dependencias.** Cada servicio instala sus dependencias dentro de su propia imagen de Docker, así que no hace falta ejecutar `npm install` en la raíz. Para desarrollar un servicio fuera de los contenedores:
 
    ```bash
-   cd src/CONGENIA-M1-SERVER && npm install
+   (cd src/CONGENIA-M1-SERVER && npm install)
    ```
 
 3. **Configurar las variables de entorno**
@@ -104,17 +105,17 @@ El código proviene de cinco repositorios privados de la organización CONGENIAG
 4. **Ejecutar el proyecto**
 
    ```bash
-   cd src/CONGENIA-ORCH
+   cd src
    docker compose up -d --build         # equivalente: npm start
    ```
 
-   La interfaz queda disponible en `http://localhost:<PUERTO_FRONTEND>`.
+   La interfaz queda disponible en `http://localhost:8080` (puerto configurable con `FRONTEND_PORT` en `src/.env`). Para comprobar que todos los servicios respondan: `npm run health`.
 
 ## Capturas
 
 Hay 13 capturas en [`/capturas`](capturas/): 12 pantallas del sistema y el diagrama de arquitectura en AWS. Las tomas del teléfono se hicieron durante una prueba en el dominio de pruebas `cogenia.app`. El nombre del paciente consultado en el SADC está pixelado, y las tomas de escritorio ocultan los datos clínicos.
 
-| # | Pantalla |
+| # | Contenido |
 |---|---|
 | [01](capturas/captura-01.png) | Inicio de sesión |
 | [02](capturas/captura-02.png) | Búsqueda del paciente en el SADC por historia clínica |
