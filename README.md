@@ -60,7 +60,7 @@ CONGENIA es una plataforma integrada al SADC para registrar, gestionar y analiza
 
 ```
 .
-├── capturas/            Capturas de pantalla del sistema (captura-01 … captura-12)
+├── capturas/            Capturas de pantalla del sistema y diagrama de arquitectura (captura-01 … captura-13)
 ├── demo/demo.mp4        Video demostrativo con narración
 ├── docs/
 │   ├── informe_final.pdf
@@ -112,7 +112,7 @@ El código proviene de cinco repositorios privados de la organización CONGENIAG
 
 ## Capturas
 
-Hay 12 capturas en [`/capturas`](capturas/). Las tomas del teléfono se hicieron durante una prueba en el dominio de pruebas `cogenia.app`. El nombre del paciente consultado en el SADC está pixelado, y las tomas de escritorio ocultan los datos clínicos.
+Hay 13 capturas en [`/capturas`](capturas/): 12 pantallas del sistema y el diagrama de arquitectura en AWS. Las tomas del teléfono se hicieron durante una prueba en el dominio de pruebas `cogenia.app`. El nombre del paciente consultado en el SADC está pixelado, y las tomas de escritorio ocultan los datos clínicos.
 
 | # | Pantalla |
 |---|---|
@@ -128,6 +128,7 @@ Hay 12 capturas en [`/capturas`](capturas/). Las tomas del teléfono se hicieron
 | [10](capturas/captura-10.png) | Panel web: búsqueda de fichas clínicas |
 | [11](capturas/captura-11.png) | Panel web: revisión del lote de sugerencias CIE-10 |
 | [12](capturas/captura-12.png) | Panel web: reportería con el agente de datos |
+| [13](capturas/captura-13.svg) | Diagrama de arquitectura en AWS |
 
 ## Demo
 
