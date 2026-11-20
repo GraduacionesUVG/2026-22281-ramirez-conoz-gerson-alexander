@@ -14,8 +14,6 @@ producción.
 
 - Levantar AWS desde cero: `CONGENIA-INFRA/BOOTSTRAP.md`
 - Ciclo de despliegue: `CONGENIA-INFRA/HERE.md`
-- El contrato de la ficha clínica: [PROMPT.md](PROMPT.md) y
-  [REQUEST.md](REQUEST.md)
 
 ## Índice
 
