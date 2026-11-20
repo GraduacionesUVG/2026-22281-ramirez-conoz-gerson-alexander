@@ -1,0 +1,17 @@
+{
+  "name": "congenia-orquestacion",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Orquestación local de CONGENIA. Cada servicio declara sus dependencias en su propio package.json: CONGENIA-M1, CONGENIA-M1-SERVER y CONGENIA-M1-PDF-WORKER.",
+  "scripts": {
+    "start": "docker compose up -d --build",
+    "stop": "docker compose down",
+    "status": "docker compose ps",
+    "logs": "docker compose logs -f",
+    "health": "./scripts/health-check.sh",
+    "reset": "docker compose down -v"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

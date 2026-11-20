@@ -1,0 +1,39 @@
+# =============================================================================
+# CONGENIA Orchestrator - .gitignore
+# =============================================================================
+# En esta entrega los repositorios de los servicios viven como subcarpetas
+# de src/ para que docker-compose.yml los construya directamente.
+# =============================================================================
+
+# Variables de entorno con secretos
+.env
+.env.*
+!.env.example
+
+
+# Volúmenes de Docker locales
+/data/
+/volumes/
+
+# Logs
+*.log
+logs/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Temporales
+*.tmp
+*.swp
+*.swo
+*~
+
+# Binarios
+weed
+darwin_arm64.tar.gz
+
+# Cache
+.cache/
+__pycache__/
+*.pyc
